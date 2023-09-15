@@ -1,0 +1,3 @@
+﻿  source.cpp
+C:\Users\User\Desktop\ht\ht_2_2_15.09\ht_2_2_15.09\source.cpp(111,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  ht_2_2_15.09.vcxproj -> C:\Users\User\Desktop\ht\ht_2_2_15.09\x64\Debug\ht_2_2_15.09.exe

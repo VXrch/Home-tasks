@@ -294,7 +294,7 @@ void main() {
 	}
 	for (int i = 0; i < row; i++) {
 		for (int j = 0; j < col; j++) {
-			arr[i][j] = rand() % 20;
+			arr[i][j] = 10 + rand() % 89;
 		}
 	}
 
