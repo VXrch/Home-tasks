@@ -287,7 +287,7 @@ void main() {
 	cout << "Enter rows: "; cin >> row;
 	cout << "Enter cols: "; cin >> col;
 
-	int** arr = new int* [row];
+	int* arr = new int [row];
 
 	for (int i = 0; i < row; ++i) {
 		arr[i] = new int[col];
@@ -317,4 +317,6 @@ void main() {
 	}
 
 	cout << "\nMax number is: " << result << endl;
+
+	delete[] arr;
 }
