@@ -192,6 +192,8 @@ void Common_values(int* parrC, const int* psizeC, int* parrA, const int* psizeA,
 	{
 		*(parrC + i) = arr[i];
 	}
+
+	delete [] arr;
 } 
 
 void Different_elements(int* parrC, const int* psizeC, int* parrA, const int* psizeA, int* parrB, const int* psizeB) {
@@ -256,6 +258,8 @@ void Different_elements(int* parrC, const int* psizeC, int* parrA, const int* ps
 	{
 		*(parrC + i) = arr[i];
 	}
+
+	delete[] arr;
 }
 
 void Print_results(int arr[], int size) {
@@ -318,6 +322,8 @@ void Different_A_B(int* parrC, const int* psizeC, int* parrA, const int* psizeA,
 	{
 		*(parrC + i) = arr[i];
 	}
+
+	delete[] arr;
 }
 
 void Different_B_A(int* parrC, const int* psizeC, int* parrA, const int* psizeA, int* parrB, const int* psizeB) {
@@ -365,6 +371,8 @@ void Different_B_A(int* parrC, const int* psizeC, int* parrA, const int* psizeA,
 	{
 		*(parrC + i) = arr[i];
 	}
+
+	delete[] arr;
 }
 
 void task_3() {
