@@ -1,0 +1,5 @@
+﻿  FileName.cpp
+D:\Новая папка\ht\HT_1.10.23\HT_1.10.23\FileName.cpp(14,22): warning C4305: инициализация: усечение из "double" в "float"
+D:\Новая папка\ht\HT_1.10.23\HT_1.10.23\FileName.cpp(163,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Новая папка\ht\HT_1.10.23\HT_1.10.23\FileName.cpp(207,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  HT_1.10.23.vcxproj -> D:\Новая папка\ht\HT_1.10.23\x64\Debug\HT_1.10.23.exe
