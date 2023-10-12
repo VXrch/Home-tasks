@@ -75,33 +75,139 @@ void task_2(int**& arr, int& rows, int& cols){
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+void DeleteLinePosition(int**& arr, int& rows, int& cols) {
+
+	int pos;
+
+	cout << "Enter row position to delete: "; cin >> pos;
+
+	if (pos < 0 || pos >= rows){
+
+		cout << "Wrong number!" << endl; 
+		return;
+	}
+
+	int** temp = new int* [rows - 1];
+
+	for (int i = 0; i < rows; i++)
+	{
+		if (i != pos){
+			temp[i - 1] = arr[i];
+		}
+	}
+
+	delete[]arr[0];
+	delete[]arr;
+	arr = temp;
+	rows--;
+}
+
 void task_3(int**& arr, int& rows, int& cols){
 
 	/*	Завдання 3.
 		Написати функцію, що видаляє рядок двовимірному масиву з зазначеної позиції.*/
 
-
-
+	DeleteLinePosition(arr, rows, cols);
+	Print(arr, rows, cols);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void AddColPosition(int**& arr, int& rows, int& cols) {
+
+	int pos;
+
+	cout << "Enter row position to add: "; cin >> pos;
+
+	if (pos < 0 || pos >= cols) {
+
+		cout << "Wrong number!" << endl;
+		return;
+	}
+
+	int** temp = new int* [rows];
+	for (int i = 0; i < rows; i++)
+	{
+		temp[i] = new int[cols + 1];
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < pos; j++)
+		{
+			temp[i][j] = arr[i][j];
+		}
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		temp[i][pos] = 10 + rand() % 89;
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = pos + 1; j < cols + 1; j++)
+		{
+			temp[i][j] = arr[i][j - 1];
+		}
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		delete[]arr[i];
+	}
+
+	delete[]arr;
+	arr = temp;
+	cols++;
+}
 
 void task_4(int**& arr, int& rows, int& cols){
 
 	/*Завдання 4. 
 	Написати функцію, що додає колонку двовимірного масиву за вказаним номером.*/
 
-
+	AddColPosition(arr, rows, cols);
+	Print(arr, rows, cols);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void AddColBegin(int**& arr, int& rows, int& cols) {
+
+	int** temp = new int* [rows];
+	for (int i = 0; i < rows; i++)
+	{
+		temp[i] = new int[cols + 1];
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		temp[i][0] = 10 + rand() % 89;
+
+		for (int j = 1; j < cols + 1; j++)
+		{
+			temp[i][j] = arr[i][j - 1];
+		}
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		delete[]arr[i];
+	}
+
+	delete[]arr;
+	arr = temp;
+	cols++;
+}
 
 void task_5(int**& arr, int& rows, int& cols){
 
 	/*Завдання 5. 
 	Написати функцію, що додає колонку двовимірного масиву на початок.*/
 
-
+	AddColBegin(arr, rows, cols); 
+	Print(arr, rows, cols);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

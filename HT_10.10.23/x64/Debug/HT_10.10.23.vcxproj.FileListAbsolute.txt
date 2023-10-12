@@ -1,1 +1,2 @@
 C:\Users\dev\Desktop\New folder\HT_10.10.23\x64\Debug\HT_10.10.23.exe
+D:\Новая папка\ht\HT_10.10.23\x64\Debug\HT_10.10.23.exe

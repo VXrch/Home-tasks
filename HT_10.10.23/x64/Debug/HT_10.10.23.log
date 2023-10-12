@@ -1,4 +1,4 @@
 ﻿  Source.cpp
-C:\Users\dev\Desktop\New folder\HT_10.10.23\Source.cpp(109,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\dev\Desktop\New folder\HT_10.10.23\Source.cpp(111,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  HT_10.10.23.vcxproj -> C:\Users\dev\Desktop\New folder\HT_10.10.23\x64\Debug\HT_10.10.23.exe
+D:\Новая папка\ht\HT_10.10.23\Source.cpp(215,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\Новая папка\ht\HT_10.10.23\Source.cpp(217,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  HT_10.10.23.vcxproj -> D:\Новая папка\ht\HT_10.10.23\x64\Debug\HT_10.10.23.exe
